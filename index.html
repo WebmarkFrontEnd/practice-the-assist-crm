@@ -3,103 +3,319 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=div, initial-scale=1.0">
-  <title>Home - Celina</title>
-  <link rel="stylesheet" href="https://use.typekit.net/lfb2dkk.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
-
-
+  <title>Marketing Hub</title>
 </head>
 
-<body>
+<body class="text-gray-800 font-inter">
+  <!-- Dashboard Page-->
+  <div class="flex w-screen h-screen">
 
-  <!--- Navbar Start --->
+    <!-- Component Start -->
 
-  <header class="bg-white navbar">
-    <div class="top-bar bg-secondary">
-      <div class="container">
-        <p class="text-light py-1 mx-auto">CELINA FAMILY DENTISTRY: 3248 S. Preston Rd #140 Celina, Texas 75009
-          • <a href="tel:(214)-851-0130">(214)-851-0130</a></p>
+    <div class="sidebar-menu">
+      <a href="#" class="logo">
+        <img src="./img/leads-logo.png" alt="">
+        <!-- <span class="text-lg font-bold text-white ml-3">Logo</span> -->
+      </a>
+      <div class="px-4 h-full">
+        <h4 class="text-sm text-light opacity-40 uppercase font-osw tracking-tight px-4">Main Menu</h4>
+        <ul class="mt-4 *:mb-1">
+
+          <li class="active">
+            <a href="#">
+              <img src="./img/dashboard.png" alt="dashboard">
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/leads+.png" alt="leads">
+              <span>Leads</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/pipeline.png" alt="pipeline">
+              <span>Pipeline</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/follow-up.png" alt="follow-up">
+              <span>Follow-up</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/marketing-hub.png" alt="marketing-hub">
+              <span>Marketing Hub-up</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/integrations.png" alt="integrations">
+              <span>Integrations</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/extra-love.png" alt="extra-love">
+              <span>Extra-love</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="mt-5 pt-5 *:mb-1 border-t-[1px] border-[#3C3F4F]">
+          <li>
+            <a href="#">
+              <img src="./img/ambassador.png" alt="ambassador">
+              <span>ambassador</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/notifications.png" alt="notifications">
+              <span>Notifications</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/pricing.png" alt="pricing">
+              <span>Pricing</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./img/contacts.png" alt="contacts">
+              <span class="text-sm">contacts</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/csv-importer.png" alt="csv-importer">
+              <span>CSV Importer</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./img/assistant.png" alt="assistant">
+              <span>Assistant</span>
+            </a>
+          </li>
+
+        </ul>
       </div>
 
+      <div class="px-4">
+        <ul class="mt-4 *:mb-1">
+          <li>
+            <a href="#">
+              <img src="./img/logout.png" alt="logout">
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="container">
+    <div class="flex flex-col w-4/6 flex-grow">
+      <div class="flex items-center justify-between flex-shrink-0 p-4">
+        <button class="btn flex items-center gap-3 py-2.5 px-8">Search MLS or Contacts
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="1.5"
+            stroke="currentColor" class="size-5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+        </button>
+        <button class="btn btn-yellow flex items-center gap-3 py-2.5 px-8">Add Client/Alert
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
 
-      <nav class="flex justify-between items-center mx-auto container  py-3">
-        <div>
-          <img class="w-16 cursor-pointer" src="/img/home/celina-family-logo.svg" alt="...">
-        </div>
-        <div
-          class="nav-links duration-500  md:static absolute 3xl:justify-center bg-white md:min-h-fit min-h-[40vh] left-0  top-[-100%] md:w-auto lg:w-auto  w-full flex items-center px-5">
-          <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
-            <li>
-              <a class="hover:text-gray-500" href="#">Products</a>
-            </li>
-            <li>
-              <a class="hover:text-gray-500" href="#">Solution</a>
-            </li>
-            <li>
-              <a class="hover:text-gray-500" href="#">Resource</a>
-            </li>
-            <li>
-              <a class="hover:text-gray-500" href="#">Developers</a>
-            </li>
-            <li>
-              <a class="hover:text-gray-500" href="#">Pricing</a>
-            </li>
-          </ul>
-        </div>
-        <div class="flex items-center gap-3 contact-info">
-          <a href="#" class="w-8"><img src="./img/home/call.svg" alt=""></a>
-          <a href="#" class="w-8"><img src="./img/home/location.svg" alt=""></a>
-          <ion-icon onclick="onToggleMenu(this)" name="menu"
-            class="text-3xl cursor-pointer md:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden"><i
-              class="ri-bar-chart-horizontal-line"></i></ion-icon>
-        </div>
-    </div>
-
-  </header>
-
-  <script>
-    const navLinks = document.querySelector('.nav-links')
-    function onToggleMenu(e) {
-      e.name = e.name === 'menu' ? 'close' : 'menu'
-      navLinks.classList.toggle('top-[13%]')
-    }
-  </script>
-
-  <!--- Navbar End --->
+        </button>
+      </div>
+      <div class=" p-8 overflow-auto bg-light-grey">
+        <div class="flex flex-grow gap-20">
+          <div class="col w-9/12">
+            <h1 class="text-4xl-3xl -tracking-[0.68px]">Resources</h1>
+            <div class="cards-wrapper">
+              <div class="mt-9 mb-6 flex gap-5 flex-row items-center">
+                <h3 class="text-2xl-3xl ">Courses</h3>
+                <hr class="w-full">
+              </div>
 
 
-  <div id="home-header">
-    <div class="container container-lg">
-      <div class="row">
-        <div class="col">
-          <img src="./img/home/celina-family-white-logo.svg" alt="" class="logo">
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-            invidunt ut labore et
-            dolore
-            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-            kasd</p>
-          <div class="btn-wrapper">
-            <div class="col">
-              <a href="#" class="btn ">Schedule Appointment</a>
+
+              <div
+                class="courses-cards cards cards grid grid-cols-4 justify-start gap-5 *:bg-light *:p-6 *:rounded-xl *:flex *:flex-col *:gap-8">
+
+                <div class="card">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="#A190CC" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                  </svg>
+
+                  <p class="text-lg">Get Started Course</p>
+                </div>
+
+                <div class="card">
+                  <img src="./img/play.svg" alt="play btn" class="w-6">
+                  <p class="text-lg">Get Started Course</p>
+                </div>
+
+                <div class="card">
+                  <img src="./img/pdf.svg" alt="pdf" class="w-6">
+                  <p class="text-lg">Get Started Course</p>
+                </div>
+
+                <div class="card">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="#A190CC" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                  </svg>
+                  <p class="text-lg">Get Started Course</p>
+                </div>
+
+
+              </div>
             </div>
 
-            <div class="col">
-              <a href="#" class="btn btn-light ">About Us</a>
+            <div class="cards-wrapper">
+              <div class="mt-12 mb-6 flex gap-5 flex-row items-center">
+                <h3 class="text-2xl-3xl ">Scripts</h3>
+                <hr class="w-full">
+              </div>
+              <div
+                class="scripts-cards cards grid grid-cols-4 justify-start gap-5 *:bg-light *:p-6 *:rounded-xl *:flex *:flex-col *:gap-8">
+
+                <div class="card">
+                  <img src="./img/pages.svg" alt="pages" class="w-6">
+                  <p class="text-lg">Get Started Course</p>
+                </div>
+
+                <div class="card">
+                  <img src="./img/play.svg" alt="play btn" class="w-6">
+                  <p class="text-lg">Get Started Course</p>
+                </div>
+
+                <div class="card ">
+                  <img src="./img/pdf.svg" alt="pdf" class="w-6">
+                  <p class="text-lg">Get Started Course</p>
+                </div>
+
+                <div class="card">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="#A190CC" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                  </svg>
+                  <p class="text-lg">Get Started Course</p>
+                </div>
+
+                <div class="card">
+                  <img src="./img/pdf.svg" alt="pdf" class="w-6">
+                  <p class="text-lg">Get Started Course</p>
+                </div>
+
+                <div class="card">
+                  <img src="./img/play.svg" alt="play btn" class="w-6">
+                  <p class="text-lg">Get Started Course</p>
+                </div>
+
+              </div>
             </div>
 
-            <div class="col">
-              <a href="#" class="btn btn-dark ">No Insurance? No Problem!</a>
+            <div class="cards-wrapper">
+              <div class="mt-12 mb-6 flex gap-5 flex-row items-center">
+                <h3 class="text-2xl-3xl ">Templates</h3>
+                <hr class="w-full">
+              </div>
+              <div
+                class="templates-cards cards cards grid grid-cols-4 justify-start gap-5 *:bg-light *:p-6 *:rounded-xl *:flex *:flex-col *:gap-8">
+
+                <div class="card">
+                  <img src="./img/pages.svg" alt="pages" class="w-6">
+                  <p>Get Started Course</p>
+                </div>
+
+                <div class="card">
+                  <img src="./img/play.svg" alt="play btn" class="w-6">
+                  <p class="text-lg">Get Started Course</p>
+                </div>
+
+                <div class="card">
+                  <img src="./img/pdf.svg" alt="pdf" class="w-6">
+                  <p class="text-lg">Get Started Course</p>
+                </div>
+
+                <div class="card">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="#A190CC" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                  </svg>
+                  <p class="text-lg">Get Started Course</p>
+                </div>
+
+                <div class="card">
+                  <img src="./img/pdf.svg" alt="pdf" class="w-6">
+                  <p class="text-lg">Get Started Course</p>
+                </div>
+
+                <div class="card">
+                  <img src="./img/play.svg" alt="play btn" class="w-6">
+                  <p class="text-lg">Get Started Course</p>
+                </div>
+
+                <div class="card">
+                  <img src="./img/pdf.svg" alt="pdf" class="w-6">
+                  <p class="text-lg">Get Started Course</p>
+                </div>
+
+                <div class="card">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="#A190CC" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                  </svg>
+                  <p class="text-lg">Get Started Course</p>
+                </div>
+
+              </div>
             </div>
+
+
+          </div>
+
+          <div class="col w-3/12">
+            <ul
+              class="bg-primary rounded-xl sticky top-0 overflow-hidden *:text-light *:p-5 *:text-lg *:uppercase *:flex">
+              <li href="#" class="active font-semibold font-osw uppercase tracking-[0.54px] bg-purple gap-3"><img
+                  src="./img/star.svg" alt="star">Courses</li>
+              <li href="#" class="font-semibold font-osw uppercase tracking-[0.54px] gap-3"><img
+                  src="./img/star-dark.svg" alt="dark star">Scripts</li>
+              <li href="#" class="font-semibold font-osw uppercase tracking-[0.54px] gap-3"><img
+                  src="./img/star-dark.svg" alt="dark star">Templates</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Component End  -->
 </body>
 
 </html>
