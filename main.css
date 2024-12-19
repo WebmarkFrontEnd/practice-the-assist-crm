@@ -37,6 +37,10 @@
     @apply mr-3  opacity-60;
   }
 
+  .font-osw {
+    @apply uppercase;
+  }
+
   h1,h2,h3,h4,h5,h6{
     @apply font-popp text-primary font-semibold;
   }
