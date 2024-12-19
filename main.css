@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 @layer components{
+
  .btn {
     @apply px-[20px] py-[15px] text-base font-osw border-2 border-light inline-block bg-purple text-light rounded-full shadow-md uppercase hover:shadow-xl hover:text-dark hover:bg-transparent hover:border-dark tracking-[0.96px];
   }
+
   .btn-yellow {
     @apply bg-yellow  text-light border-light shadow-[#D6CF1F] hover:bg-purple hover:text-light hover:border-light hover:shadow-purple;
   }
-
 
   .btn-dark {
     @apply bg-primary  text-light border-light shadow-primary hover:bg-purple hover:text-light hover:border-light hover:shadow-purple;
@@ -22,11 +23,9 @@
   .sidebar-menu{
     @apply flex flex-col left-0 top-0 w-60 h-full bg-[#262A3B] py-4 z-50 transition-transform;
   }
-
   .sidebar-menu .logo{
     @apply flex items-center justify-center mb-4 border-b-[1px] border-[#3C3F4F];
   }
-
   .sidebar-menu li a {
     @apply flex items-center tracking-tight py-2.5 px-4 text-sm text-gray-300 hover:bg-[#3C3F4F] active:bg-[#3C3F4F] hover:text-gray-100 active:text-gray-100 rounded-md opacity-90 hover:opacity-100;
   }
