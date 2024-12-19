@@ -589,6 +589,7 @@ video {
 }
 
 .btn {
+  text-transform: uppercase;
   display: inline-block;
   border-radius: 9999px;
   border-width: 2px;
@@ -603,7 +604,6 @@ video {
   font-family: Oswald, sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
-  text-transform: uppercase;
   letter-spacing: 0.96px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
@@ -699,6 +699,36 @@ video {
   background-color: rgb(214 207 31 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(38 42 59 / var(--tw-text-opacity, 1));
+}
+
+.sticky-btn-wrapper {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.sticky-btn-wrapper button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.assist-info-col {
+  flex-grow: 1;
+  overflow: auto;
+  border-radius: 1rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(244 242 240 / var(--tw-border-opacity, 1));
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 242 240 / var(--tw-bg-opacity, 1));
+  padding: 2rem;
 }
 
 .sidebar-menu {
@@ -1169,6 +1199,10 @@ h4 {
   height: 100svh;
 }
 
+.h-\[56px\] {
+  height: 56px;
+}
+
 .max-h-64 {
   max-height: 16rem;
 }
@@ -1256,6 +1290,10 @@ h4 {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-1\/4 {
+  width: 25%;
 }
 
 .max-w-7xl {
@@ -1940,8 +1978,28 @@ h4 {
   padding-top: 1.25rem;
 }
 
+.pb-2\.5 {
+  padding-bottom: 0.625rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pr-2\.5 {
+  padding-right: 0.625rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
 .text-left {
   text-align: left;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .align-top {
@@ -2034,6 +2092,10 @@ h4 {
   letter-spacing: 0.54px;
 }
 
+.tracking-\[0\.56px\] {
+  letter-spacing: 0.56px;
+}
+
 .tracking-\[0\.96px\] {
   letter-spacing: 0.96px;
 }
@@ -2043,7 +2105,7 @@ h4 {
 }
 
 .tracking-wide {
-  letter-spacing: 0.32px;
+  letter-spacing: 0.34px;
 }
 
 .text-blue-500 {
@@ -2399,6 +2461,11 @@ h4 {
   --tw-shadow: 0px 6px 0px 0px #262a3b;
   --tw-shadow-colored: 0px 6px 0px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.focus-visible\:outline-none:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .active\:bg-\[\#3C3F4F\]:active {

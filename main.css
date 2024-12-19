@@ -5,7 +5,7 @@
 @layer components{
 
  .btn {
-    @apply px-[20px] py-[15px] text-base font-osw border-2 border-light inline-block bg-purple text-light rounded-full shadow-md uppercase hover:shadow-xl hover:text-dark hover:bg-transparent hover:border-dark tracking-[0.96px];
+    @apply px-[20px] py-[15px] text-base font-osw border-2 border-light inline-block bg-purple text-light rounded-full shadow-md  hover:shadow-xl hover:text-dark hover:bg-transparent hover:border-dark tracking-[0.96px];
   }
 
   .btn-yellow {
@@ -18,6 +18,18 @@
 
   .btn-without-shadow-yellow{
     @apply px-2 py-3 text-base font-osw font-semibold bottom-2 border-none inline-block bg-light text-primary/75 rounded-lg uppercase hover:text-primary hover:bg-yellow active:text-primary active:bg-yellow tracking-[0.32px];
+  }
+
+  .sticky-btn-wrapper{
+    @apply flex items-center justify-between flex-shrink-0 p-4;
+  }
+
+  .sticky-btn-wrapper button{
+    @apply flex items-center gap-3 py-2.5 px-8;
+  }
+
+   .assist-info-col{
+    @apply flex-grow p-8 overflow-auto rounded-2xl bg-light-grey border border-light-grey;
   }
 
   .sidebar-menu{

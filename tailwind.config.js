@@ -7,7 +7,7 @@ module.exports = {
       tightest: '-0.34px',
       tight: '-0.15px',
       normal: '0',
-      wide:'0.32px',
+      wide:'0.34px',
       wider: '0.72px',
       widest: '0.96px',
     },

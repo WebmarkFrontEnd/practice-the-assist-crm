@@ -14,8 +14,8 @@
   <div class="flex w-screen h-screen">
 
     <!-- Component Start -->
-    <div class="flex flex-col left-0 top-0 w-60 h-full bg-[#262A3B] py-4 z-50 sidebar-menu transition-transform">
-      <a href="#" class="flex items-center justify-center mb-4 border-b-[1px] border-[#3C3F4F]">
+    <div class="sidebar-menu">
+      <a href="#" class="logo">
         <img src="./img/leads-logo.png" alt="">
         <!-- <span class="text-lg font-bold text-white ml-3">Logo</span> -->
       </a>
@@ -126,15 +126,15 @@
       </div>
     </div>
     <div class="flex flex-col w-4/6 flex-grow">
-      <div class="flex items-center justify-between flex-shrink-0 p-4">
-        <button class="btn flex items-center gap-3 py-2.5 px-8">Search MLS or Contacts
+      <div class="sticky-btn-wrapper">
+        <button class="btn">Search MLS or Contacts
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="1.5"
             stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
           </svg>
         </button>
-        <button class="btn btn-yellow flex items-center gap-3 py-2.5 px-8">Add Client/Alert
+        <button class="btn btn-yellow">Add Client/Alert
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -143,7 +143,7 @@
 
         </button>
       </div>
-      <div class="flex-grow p-8 overflow-auto rounded-2xl bg-light-grey border border-grey">
+      <div class="assist-info-col">
         <h1>Contacts Us Here</h1>
         <div class="mt-6 flex flex-row gap-8 items-center">
           <button class="btn flex items-center gap-3 py-2.5 px-8">
@@ -156,10 +156,12 @@
             </svg>
           </button>
 
-          <form class="bg-light h-14 flex items-center p-1.5">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"
-                stroke-width="1.5" stroke="currentColor" class="size-6">
+          <form class="bg-light flex items-center justify-between gap-3 w-1/4 h-[56px] py-2 pr-2.5 pl-5 rounded-full">
+            <input class="focus-visible:outline-none w-full h-full" type="text" placeholder="Search for a contact"
+              name="search">
+            <button class="btn-yellow py-2 px-5 pb-2.5 rounded-full " type="submit"><svg
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
               </svg></i></button>
@@ -173,7 +175,7 @@
               <th>Name</th>
               <th>Email Address</th>
               <th>Headline</th>
-              <th>Send Message</th>
+              <th class="flex items-center justify-center h-14">Send Message</th>
               <th>Edit</th>
               <th>Delete</th>
             </tr>
@@ -183,7 +185,8 @@
               <td class="font-semibold">James Washington</td>
               <td><a href="mailto:mcbridekelly@yahoo.com">mcbridekelly@yahoo.com</a></td>
               <td>N/A</td>
-              <td><button class="btn flex items-center gap-3 py-2.5 px-8">
+              <td class="flex items-center justify-center h-14 pt-4"><button
+                  class="btn flex items-center gap-3 py-2.5 px-8">
                   Send Message
                 </button></td>
               <td><a href="#"><img src="./img/edit.svg" alt=""></a></td>
@@ -197,7 +200,8 @@
               <td class="font-semibold">Jennifer Rivera</td>
               <td><a href="mailto:gwalker@gmail.com">gwalker@gmail.com</a></td>
               <td>N/A</td>
-              <td><button class="btn flex items-center gap-3 py-2.5 px-8">
+              <td class="flex items-center justify-center h-14 pt-4"><button
+                  class="btn flex items-center gap-3 py-2.5 px-8">
                   Send Message
                 </button></td>
               <td><a href="#"><img src="./img/edit.svg" alt=""></a></td>
@@ -211,7 +215,8 @@
               <td class="font-semibold">Alan Ramirez</td>
               <td><a href="mailto:jesus94@gmail.com">jesus94@gmail.com</a></td>
               <td>N/A</td>
-              <td><button class="btn flex items-center gap-3 py-2.5 px-8">
+              <td class="flex items-center justify-center h-14 pt-4"><button
+                  class="btn flex items-center gap-3 py-2.5 px-8">
                   Send Message
                 </button></td>
               <td><a href="#"><img src="./img/edit.svg" alt=""></a></td>
@@ -225,7 +230,8 @@
               <td class="font-semibold">Sarah Thomas</td>
               <td><a href="mailto:georgewheeler@elliott-flores.com">georgewheeler@elliott-flores.com</a></td>
               <td>N/A</td>
-              <td><button class="btn flex items-center gap-3 py-2.5 px-8">
+              <td class="flex items-center justify-center h-14 pt-4"><button
+                  class="btn flex items-center gap-3 py-2.5 px-8">
                   Send Message
                 </button></td>
               <td><a href="#"><img src="./img/edit.svg" alt=""></a></td>
@@ -239,7 +245,8 @@
               <td class="font-semibold">Katherine Ferguson</td>
               <td><a href="mailto:robertcook@hotmail.com">robertcook@hotmail.com</a></td>
               <td>N/A</td>
-              <td><button class="btn flex items-center gap-3 py-2.5 px-8">
+              <td class="flex items-center justify-center h-14 pt-4"><button
+                  class="btn flex items-center gap-3 py-2.5 px-8">
                   Send Message
                 </button></td>
               <td><a href="#"><img src="./img/edit.svg" alt=""></a></td>
@@ -253,7 +260,8 @@
               <td class="font-semibold">Crystal Franco</td>
               <td><a href="mailto:lesliejohnson@hotmail.com">lesliejohnson@hotmail.com</a></td>
               <td>N/A</td>
-              <td><button class="btn flex items-center gap-3 py-2.5 px-8">
+              <td class="flex items-center justify-center h-14 pt-4"><button
+                  class="btn flex items-center gap-3 py-2.5 px-8">
                   Send Message
                 </button></td>
               <td><a href="#"><img src="./img/edit.svg" alt=""></a></td>
@@ -267,7 +275,8 @@
               <td class="font-semibold">Mike Garcia</td>
               <td><a href="mailto:angela39@gmail.com">angela39@gmail.com</a></td>
               <td>N/A</td>
-              <td><button class="btn flex items-center gap-3 py-2.5 px-8">
+              <td class="flex items-center justify-center h-14 pt-4"><button
+                  class="btn flex items-center gap-3 py-2.5 px-8">
                   Send Message
                 </button></td>
               <td><a href="#"><img src="./img/edit.svg" alt=""></a></td>
